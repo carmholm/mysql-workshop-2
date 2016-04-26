@@ -1,0 +1,21 @@
+Exercise 2
+
+Insert one row into decodemtl_addressbook.Account
+
+INSERT INTO Account (email, password, createdOn, modifiedOn)
+VALUES
+  ("student@decodeMtl.com", "ilovecoding", NOW(), NOW());
+
+Insert one row into decodemtl_addressbook.AddressBook
+
+INSERT INTO AddressBook (accountId, name, createdOn, modifiedOn)
+VALUES
+    ("1000", "Carmen", NOW(), NOW());
+
+Insert three rows into decodemtl_addressbook.Entry
+
+INSERT INTO Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne, contentLineTwo, contentLineThree, contentLineFour, contentLineFive)
+VALUES
+    ("1", "Carmen", "Holmes", "1987-04-02", "home", "phone", "15147033767", "Looks forward to her morning coffee", "Web Developer", "Enjoys crosswords", "Avid reader"),
+    ("2", "Victoria", "Wonnacott", "1956-02-22", "work", "phone", "15144898033", "Artist", "Has two daughters", "Enjoys learning", "Imaginative"),
+    ("3", "Merrill", "Kost", "1987-09-28", "home", "phone", "17789270747", "Teacher", "Yoga devotee", "Enjoys the outdoors", "Passionate");
