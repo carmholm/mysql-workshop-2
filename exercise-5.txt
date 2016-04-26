@@ -1,0 +1,11 @@
+Exercise 5
+
+Delete all data from decodemtl_addressbook.Entry without using a DELETE statement
+
+DROP TABLE Entry;
+
+mysql> DROP TABLE Entry;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SELECT * FROM Entry;
+ERROR 1146 (42S02): Table 'decodemtl_addressbook_import.Entry' doesn't exist
