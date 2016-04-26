@@ -1,0 +1,33 @@
+Exercise 3
+
+Retrieve data from the previously inserted decodemtl_addressbook.Account row
+
+mysql> SELECT password FROM Account;
++-------------+
+| password    |
++-------------+
+| ilovecoding |
++-------------+
+1 row in set (0.00 sec)
+
+SELECT userId, COUNT(*) AS numPosts from posts GROUP BY userId ORDER BY numPosts DESC;
+
+Retrieve data from the previously inserted decodemtl_addressbook.AddressBook row
+
+mysql> SELECT accountId from AddressBook;
++-----------+
+| accountId |
++-----------+
+|      1000 |
++-----------+
+1 row in set (0.00 sec)
+
+Retrieve data from the previously inserted decodemtl_addressbook.Entry rows
+
+mysql> SELECT contentLineOne AS phoneNumber FROM Entry WHERE firstName="Merrill";
++-------------+
+| phoneNumber |
++-------------+
+| 17789270747 |
++-------------+
+1 row in set (0.00 sec)
